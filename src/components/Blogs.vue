@@ -33,7 +33,6 @@
 </template>
 
 <script lang="ts" setup>
-import { defineProps } from "vue";
 import moment from "moment";
 const props = defineProps(["blogs"]);
 </script>
