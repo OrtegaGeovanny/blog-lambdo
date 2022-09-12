@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Blogs</h2>
-    <div class="flex flex-row space-x-5">
+    <div class="flex sm:flex-col md:flex-row lg:flex-row space-x-5">
       <div v-for="blog in props.blogs.posts" :key="blog.id">
         <a :href="blog.url" target="_blank">
           <div

@@ -1,8 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Blogs from "../components/Blogs.vue";
-const blogs = await fetch(
-  "https://blog.lambdo.com/ghost/api/content/posts/?key=0e79ad6ade6790b2fd8e0418e9"
+const blogs = await fetch(`${import.meta.env.LAMBDO_BLOG_URL}${import.meta.env.LAMBDO_API_KEY}`
 ).then((res) => res.json());
 ---
 
